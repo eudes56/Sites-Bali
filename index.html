@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BALI BIO MARKET - Votre santé, notre engagement naturel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- SECTION NAVIGATION -->
+    <header class="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">BALI BIO MARKET</a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#hero" class="nav__link">Accueil</a></li>
+                    <li class="nav__item"><a href="#boutique" class="nav__link">Nos Solutions</a></li>
+                    <li class="nav__item"><a href="#expertise" class="nav__link">Expertise Forever</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content">
+
+        <!-- SECTION HERO -->
+        <section class="hero" id="hero">
+            <div class="hero__text-column">
+                <h1 class="hero__title">Votre santé, notre engagement naturel</h1>
+                <p class="hero__subtitle">Compléments nutritionnels certifiés — livraison à Ouagadougou, Burkina Faso 🇧🇫</p>
+                <a href="https://wa.me/22678877011?text=Bonjour%2C%20je%20souhaite%20une%20consultation%20gratuite" target="_blank" class="cta__button">Demander une consultation gratuite</a>
+            </div>
+            <div class="hero__slider-column">
+                 <div class="slider">
+                    <img src="images/hero-1.jpg" alt="Slide 1" class="slide">
+                    <img src="images/hero-2.jpg" alt="Slide 2" class="slide">
+                    <img src="images/hero-3.jpg" alt="Slide 3" class="slide">
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION EXPERTISE FOREVER -->
+        <section class="expertise" id="expertise">
+            <div class="expertise__container container">
+                <div class="expertise__image-gallery">
+                    <div class="gallery-top">
+                        <img src="images/forever-1.jpg" alt="Plantation d'aloe vera Forever" class="gallery-img">
+                        <img src="images/forever-2.jpg" alt="Produits Forever Living" class="gallery-img">
+                    </div>
+                    <div class="gallery-bottom">
+                        <img src="images/forever-3.jpg" alt="Travailleur dans une plantation Forever" class="gallery-img-large">
+                    </div>
+                </div>
+                <div class="expertise__content-column">
+                    <h2 class="expertise__title">Pourquoi choisir Forever Living ?</h2>
+                    <p class="expertise__description">
+                        Fondée en <strong>1978</strong> par Rex Maughan, Forever Living Products est le <strong>leader mondial</strong> de l'Aloe Vera avec 45 ans d'expérience. Présente dans <strong>160 pays</strong>, elle aide des millions de personnes à améliorer leur santé naturellement. Nos produits sont <strong>certifiés</strong> Halal, Kosher et IASC — purs, authentiques et directement issus de nos plantations.
+                    </p>
+                    <a href="https://foreverliving.com/bfa/fr-bf/about" target="_blank" class="cta__button expertise__button">En savoir plus</a>
+                    <div class="expertise__certification">
+                         <img src="images/certification.jpg" alt="Certification Forever Living">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION BOUTIQUE -->
+        <section class="boutique" id="boutique">
+            <div class="container">
+                <h2 class="section__title">Nos Solutions Santé</h2>
+                <div class="category-grid">
+                    <div class="category-card" data-category="fertilite">
+                        <img src="images/illustration-fertilite.jpg" alt="Fertilité Féminine" class="category-card__image">
+                        <div class="category-card__content">
+                            <h3 class="category-card__title">Fertilité Féminine</h3>
+                            <p class="category-card__description">Équilibre hormonal & maternité épanouie</p>
+                            <span class="category-card__link">Voir les produits →</span>
+                        </div>
+                    </div>
+                    <div class="category-card" data-category="hta">
+                        <img src="images/illustration-hta.jpg" alt="Hypertension (HTA)" class="category-card__image">
+                         <div class="category-card__content">
+                            <h3 class="category-card__title">Hypertension (HTA)</h3>
+                            <p class="category-card__description">Protège ton cœur naturally</p>
+                            <span class="category-card__link">Voir les produits →</span>
+                        </div>
+                    </div>
+                    <div class="category-card" data-category="colopathie">
+                        <img src="images/illustration-colopathie.jpg" alt="Colopathie" class="category-card__image">
+                         <div class="category-card__content">
+                            <h3 class="category-card__title">Colopathie</h3>
+                            <p class="category-card__description">Confort intestinal & microbiome</p>
+                            <span class="category-card__link">Voir les produits →</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION TESTIMONIALS -->
+        <section class="testimonials" id="testimonials">
+            <div class="container">
+                <h2 class="testimonials__title">Ils sont passés en mode FOREVER !</h2>
+                <div class="testimonial-grid" id="testimonial-grid">
+                    <!-- Testimonial cards will be injected here by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+
+        <!-- SECTION CONTACT -->
+        <section class="contact" id="contact">
+            <div class="contact__container container">
+                <h2 class="section__title">Contactez-nous</h2>
+                <form id="contact-form" class="contact__form">
+                    <input type="text" id="name" placeholder="Votre nom" required>
+                    <input type="tel" id="phone" placeholder="Votre téléphone" required>
+                    <textarea id="message" placeholder="Votre message" required></textarea>
+                    <button type="submit" class="cta__button">Envoyer sur WhatsApp</button>
+                </form>
+                <div class="call-buttons">
+                    <a href="tel:+22678877011" class="call__button">Appel : 78 87 70 11</a>
+                    <a href="tel:+22677413312" class="call__button">Appel : 77 41 33 12</a>
+                </div>
+                <div class="payment-methods">
+                    <p class="payment-methods__text">Moyens de paiement acceptés</p>
+                    <div class="payment-methods__logos">
+                        <div class="payment-option">
+                            <img src="images/orange-money.png" alt="Orange Money" class="payment-logo">
+                            <span class="payment-number">+226 77 41 33 12</span>
+                        </div>
+                        <div class="payment-option">
+                            <img src="images/wave.png" alt="Wave" class="payment-logo">
+                            <span class="payment-number">+226 77 41 33 12</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- PRODUCT VIEW SECTION (Initially Hidden) -->
+    <section id="product-view" class="product-view" style="display: none;">
+        <div class="container">
+            <button id="back-to-categories" class="back-button">← Retour aux catégories</button>
+            <h2 id="product-view-title" class="section__title"></h2>
+            <div id="product-view-grid" class="product-view-grid">
+                <!-- Products will be injected here -->
+            </div>
+            <div class="posology-section">
+                <h3 class="section__title">Vidéos de Posologie</h3>
+                <div id="video-tabs" class="video-tabs">
+                    <!-- Video tabs will be injected here -->
+                </div>
+                <div id="video-player-container" class="video-player-container">
+                    <video id="posology-video-player" controls muted playsinline>
+                        <source src="" type="video/mp4">
+                        Votre navigateur ne supporte pas la lecture de vidéos.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer__container container">
+            <p>&copy; 2025 BALI BIO MARKET. Tous droits réservés. Burkina Faso 🇧🇫.</p>
+             <p class="legal_mention"><em>Produits non médicamenteux. Pour tout problème de santé, consultez votre médecin.</em></p>
+        </div>
+    </footer>
+
+
+    <!-- BADGE FLOTTANT WHATSAPP -->
+    <a href="https://wa.me/22678877011?text=Bonjour%2C+je+voudrais+plus+d'informations" target="_blank" class="whatsapp-float">
+       <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" class="whatsapp-icon"><path d="M19.11 17.205c-.372 0-1.088 1.39-1.088 1.39s-.213.12-.33.12c-.117 0-.213-.06-.213-.06s-1.39-1.712-2.94-3.262c-1.55-1.55-3.262-2.94-3.262-2.94s-.06-.1-.06-.213c0-.117.12-.213.12-.213s1.39-1.088 1.39-1.088c0-.118-.372-1.14-.528-1.512-.156-.372-.528-.528-.528-.528s-.372-.12-.372-.12h-.12c-.213 0-1.2.43-2.112 1.448C10.34 13.56 9 15.27 9 16.5c0 1.23.43 2.112 1.448 3.024 1.018.912 2.73 2.256 4.28 3.805 1.55 1.55 2.895 2.835 3.805 4.28.912 1.018 1.8 1.448 3.024 1.448 1.23 0 2.94-1.34 2.94-1.34s.43-1.2.12-2.112c-.312-.912-1.512-.528-1.512-.528z" fill="currentColor"></path></svg>
+    </a>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+
+        const temoignages = [
+          { prenom: 'Diallo Idrissa', role: 'Client BALI BIO MARKET', video: 'videos/temoignage-diallo-idrissa.mp4', poster: 'images/poster-diallo-idrissa.jpg' },
+          { prenom: 'Moussa', role: 'Client BALI BIO MARKET', video: 'videos/temoignage-moussa.mp4', poster: 'images/poster-moussa.jpg' },
+          { prenom: 'Couple Dodien', role: 'Clients BALI BIO MARKET', video: 'videos/temoignage-couple-dodien.mp4', poster: 'images/poster-couple-dodien.jpg' }
+        ];
+
+        const productsData = {
+            fertilite: {
+                title: 'Fertilité Féminine',
+                products: [
+                    { id: 'berry-nectar', name: 'Berry Nectar', subtitle: 'BOOSTER DE VITALITÉ', description: 'Jus de fruits rouges et aloe vera, renforce la vitalité féminine.', price: '22.000 FCFA' },
+                    { id: 'vitolize-femme', name: 'Vitolize Femme', subtitle: 'ÉQUILIBRE HORMONAL', description: 'Complexe vitamines et minéraux pour la femme.', price: '27.500 FCFA' },
+                    { id: 'lycium-plus', name: 'Lycium Plus', subtitle: 'ANTIOXYDANT PUISSANT', description: "Antioxydants puissants pour l'équilibre hormonal.", price: '26.000 FCFA' }
+                ]
+            },
+            hta: {
+                title: 'Hypertension (HTA)',
+                products: [
+                    { id: 'arctic-sea', name: 'Arctic Sea', subtitle: 'OMEGA-3', description: 'Description pour Arctic Sea', price: '26.000 FCFA' },
+                    { id: 'garlic-thyme', name: 'Garlic-Thyme', subtitle: 'AIL & THYM', description: 'Description pour Garlic-Thyme', price: '16.000 FCFA' },
+                    { id: 'cardio-health', name: 'Cardio Health', subtitle: 'COQ10', description: 'Description pour Cardio Health', price: '29.000 FCFA' }
+                ]
+            },
+            colopathie: {
+                title: 'Colopathie',
+                products: [
+                    { id: 'fields-of-greens', name: 'Fields of Greens', subtitle: 'FIBRES & LÉGUMES', description: 'Description pour Fields of Greens', price: '11.500 FCFA' },
+                    { id: 'active-pro-b', name: 'Active Pro-B', subtitle: 'PROBIOTIQUES', description: 'Description pour Active Pro-B', price: '32.000 FCFA' },
+                    { id: 'bee-propolis', name: 'Bee Propolis', subtitle: "PROPOLIS D'ABEILLE", description: 'Description pour Bee Propolis', price: '28.500 FCFA' }
+                ]
+            }
+        };
+
+        const mainContent = document.getElementById('main-content');
+        const productView = document.getElementById('product-view');
+        const categoryCards = document.querySelectorAll('.category-card');
+        const backButton = document.getElementById('back-to-categories');
+
+        function populateProductView(categoryData) {
+            try {
+                const titleEl = document.getElementById('product-view-title');
+                const gridEl = document.getElementById('product-view-grid');
+                const tabsEl = document.getElementById('video-tabs');
+                const playerContainer = document.getElementById('video-player-container');
+                const player = document.getElementById('posology-video-player');
+
+                titleEl.textContent = categoryData.title;
+                gridEl.innerHTML = '';
+                tabsEl.innerHTML = '';
+
+                if (!categoryData.products || categoryData.products.length === 0) {
+                    gridEl.innerHTML = '<p>Aucun produit dans cette catégorie.</p>';
+                    playerContainer.style.display = 'none';
+                    return;
+                }
+
+                categoryData.products.forEach((product, index) => {
+                    const productCard = document.createElement('div');
+                    productCard.className = 'product-view-card';
+                    productCard.innerHTML = `
+                        <img src="images/${product.id}.jpg" alt="${product.name}" class="product-view-card__image">
+                        <div class="product-view-card__content">
+                            <h4 class="product-view-card__name">${product.name}</h4>
+                            <p class="product-view-card__subtitle">${product.subtitle}</p>
+                            <p class="product-view-card__description">${product.description}</p>
+                            <p class="product-view-card__price">${product.price}</p>
+                            <a href="https://wa.me/22678877011?text=Bonjour+je+suis+intéressé+par+${encodeURIComponent(product.name)}" target="_blank" class="product-view-card__button">Commander sur WhatsApp</a>
+                        </div>
+                    `;
+                    gridEl.appendChild(productCard);
+
+                    const videoTab = document.createElement('button');
+                    videoTab.className = 'video-tab';
+                    videoTab.textContent = product.name;
+                    videoTab.dataset.videoSrc = `videos/posologie-${product.id}.mp4`;
+                    tabsEl.appendChild(videoTab);
+
+                    if (index === 0) {
+                        videoTab.classList.add('active');
+                        const sourceEl = player.querySelector('source');
+                        if (sourceEl) {
+                            sourceEl.src = videoTab.dataset.videoSrc;
+                            player.load();
+                        }
+                    }
+                });
+                playerContainer.style.display = 'block';
+            } catch (e) {
+                console.error('Erreur lors de la population de la vue produit:', e);
+                gridEl.innerHTML = '<p>Une erreur est survenue lors du chargement des produits.</p>';
+            }
+        }
+
+        categoryCards.forEach(card => {
+            card.addEventListener('click', () => {
+                mainContent.style.display = 'none';
+                productView.style.display = 'block';
+                window.scrollTo(0, 0);
+
+                const categoryId = card.dataset.category;
+                const categoryData = productsData[categoryId];
+                if (categoryData) {
+                    populateProductView(categoryData);
+                } else {
+                    console.error('Aucune donnée trouvée pour la catégorie:', categoryId);
+                    document.getElementById('product-view-title').textContent = 'Catégorie non trouvée';
+                    document.getElementById('product-view-grid').innerHTML = '';
+                }
+            });
+        });
+
+        backButton.addEventListener('click', () => {
+            mainContent.style.display = 'block';
+            productView.style.display = 'none';
+            window.scrollTo(0, 0);
+        });
+
+        document.getElementById('video-tabs').addEventListener('click', e => {
+            if (e.target.classList.contains('video-tab')) {
+                const player = document.getElementById('posology-video-player');
+                if (!player) return;
+                
+                const source = player.querySelector('source');
+                if (!source) return;
+
+                const newSrc = e.target.dataset.videoSrc;
+                document.querySelectorAll('.video-tab').forEach(tab => tab.classList.remove('active'));
+                e.target.classList.add('active');
+
+                if (source.getAttribute('src') !== newSrc) {
+                    source.src = newSrc;
+                    player.load();
+                    player.play().catch(err => console.error('Erreur de lecture vidéo:', err));
+                } 
+            }
+        });
+
+        const contactForm = document.getElementById('contact-form');
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const message = document.getElementById('message').value;
+            const waText = `Bonjour, je suis ${name}. Mon numéro est le ${phone}. Message : ${message}`;
+            const waUrl = `https://wa.me/22678877011?text=${encodeURIComponent(waText)}`;
+            window.open(waUrl, '_blank');
+        });
+
+        // --- TESTIMONIALS SCRIPT ---
+        const testimonialGrid = document.getElementById('testimonial-grid');
+        temoignages.forEach(temoignage => {
+            const card = document.createElement('div');
+            card.className = 'testimonial-card';
+
+            card.innerHTML = `
+                <video class="testimonial-video" loop muted playsinline poster="${temoignage.poster}">
+                    <source src="${temoignage.video}" type="video/mp4">
+                </video>
+                <div class="card-overlay"></div>
+                <button class="play-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                </button>
+                <div class="card-content">
+                    <img src="images/logo-forever.png" alt="Logo Forever" class="forever-logo">
+                    <div class="testimonial-info">
+                        <span class="testimonial-name">${temoignage.prenom}</span>
+                        <span class="testimonial-role">${temoignage.role}</span>
+                    </div>
+                </div>
+            `;
+
+            const video = card.querySelector('.testimonial-video');
+            const playButton = card.querySelector('.play-button');
+
+            playButton.addEventListener('click', (e) => {
+                e.stopPropagation();
+                if (video.paused) {
+                    video.play();
+                    playButton.style.display = 'none';
+                } 
+            });
+
+            video.addEventListener('click', () => {
+                if (!video.paused) {
+                    video.pause();
+                    playButton.style.display = 'flex';
+                }
+            });
+
+             video.addEventListener('pause', () => {
+                playButton.style.display = 'flex';
+            });
+
+
+            testimonialGrid.appendChild(card);
+        });
+
+    });
+    </script>
+</body>
+</html>
