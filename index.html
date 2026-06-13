@@ -181,11 +181,19 @@ src="https://www.facebook.com/tr?id=1024453010087355&ev=PageView&noscript=1"
             </div>
         </div>
     </section>
+    
+    <!-- VIDEO LIGHTBOX -->
+    <div id="video-lightbox" class="lightbox" style="display: none;">
+        <div class="lightbox-content">
+            <button id="close-lightbox" class="close-lightbox">&times;</button>
+            <div id="lightbox-video-container" class="lightbox-video-container"></div>
+        </div>
+    </div>
 
     <!-- FOOTER -->
     <footer class="footer">
         <div class="footer__container container">
-            <p>&copy; 2025 BALI BIO MARKET. Tous droits réservés. Burkina Faso 🇧🇫.</p>
+            <p>&copy; <span id="copyright-year"></span> BALI BIO MARKET. Tous droits réservés. Burkina Faso 🇧🇫.</p>
              <p class="legal_mention"><em>Produits non médicamenteux. Pour tout problème de santé, consultez votre médecin.</em></p>
         </div>
     </footer>
@@ -198,6 +206,9 @@ src="https://www.facebook.com/tr?id=1024453010087355&ev=PageView&noscript=1"
 
     <script>
     document.addEventListener('DOMContentLoaded', function() {
+
+        // Set copyright year
+        document.getElementById('copyright-year').textContent = new Date().getFullYear();
 
         const temoignages = [
           { prenom: 'Diallo Idrissa', role: 'Client BALI BIO MARKET', youtube: 'https://youtu.be/PYTEHLTgDyI', poster: 'images/poster-diallo-idrissa.jpg' },
@@ -236,11 +247,31 @@ src="https://www.facebook.com/tr?id=1024453010087355&ev=PageView&noscript=1"
         const productView = document.getElementById('product-view');
         const categoryCards = document.querySelectorAll('.category-card');
         const backButton = document.getElementById('back-to-categories');
+        const lightbox = document.getElementById('video-lightbox');
+        const lightboxVideoContainer = document.getElementById('lightbox-video-container');
+        const closeLightboxButton = document.getElementById('close-lightbox');
 
         function getYouTubeID(url) {
             const regex = /(?:https?:\/\/)?(?:www\.)?(?:youtube\.com|youtu\.be)\/(?:watch\?v=)?(?:embed\/)?([a-zA-Z0-9_-]{11})/;
             const match = url.match(regex);
             return match ? match[1] : null;
+        }
+        
+        function openLightbox(youtubeUrl) {
+            const videoId = getYouTubeID(youtubeUrl);
+            if (videoId) {
+                lightboxVideoContainer.innerHTML = `
+                    <iframe src="https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen></iframe>`;
+                lightbox.style.display = 'flex';
+            }
+        }
+
+        function closeLightbox() {
+            lightbox.style.display = 'none';
+            lightboxVideoContainer.innerHTML = '';
         }
 
         function loadVideoForTab(tab) {
@@ -369,8 +400,6 @@ src="https://www.facebook.com/tr?id=1024453010087355&ev=PageView&noscript=1"
             const card = document.createElement('div');
             card.className = 'testimonial-card';
             card.style.backgroundImage = `url('${temoignage.poster}')`;
-            card.style.backgroundSize = 'cover';
-            card.style.backgroundPosition = 'center';
 
             card.innerHTML = `
                 <div class="card-overlay"></div>
@@ -387,10 +416,17 @@ src="https://www.facebook.com/tr?id=1024453010087355&ev=PageView&noscript=1"
             `;
 
             card.addEventListener('click', () => {
-                window.open(temoignage.youtube, '_blank');
+                openLightbox(temoignage.youtube);
             });
             
             testimonialGrid.appendChild(card);
+        });
+        
+        closeLightboxButton.addEventListener('click', closeLightbox);
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) {
+                closeLightbox();
+            }
         });
     });
     </script>
