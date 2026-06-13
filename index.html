@@ -159,10 +159,7 @@
                     <!-- Video tabs will be injected here -->
                 </div>
                 <div id="video-player-container" class="video-player-container">
-                    <video id="posology-video-player" controls muted playsinline>
-                        <source src="" type="video/mp4">
-                        Votre navigateur ne supporte pas la lecture de vidéos.
-                    </video>
+                    <!-- Video Player will be injected here by JS -->
                 </div>
             </div>
         </div>
@@ -178,7 +175,7 @@
 
 
     <!-- BADGE FLOTTANT WHATSAPP -->
-    <a href="https://wa.me/22678877011?text=Bonjour%2C+je+voudrais+plus+d'informations" target="_blank" class="whatsapp-float">
+    <a href="https://wa.me/22678877011?text=Bonjour%2C+je+voudrais+plus+d\'informations" target="_blank" class="whatsapp-float">
        <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" class="whatsapp-icon"><path d="M19.11 17.205c-.372 0-1.088 1.39-1.088 1.39s-.213.12-.33.12c-.117 0-.213-.06-.213-.06s-1.39-1.712-2.94-3.262c-1.55-1.55-3.262-2.94-3.262-2.94s-.06-.1-.06-.213c0-.117.12-.213.12-.213s1.39-1.088 1.39-1.088c0-.118-.372-1.14-.528-1.512-.156-.372-.528-.528-.528-.528s-.372-.12-.372-.12h-.12c-.213 0-1.2.43-2.112 1.448C10.34 13.56 9 15.27 9 16.5c0 1.23.43 2.112 1.448 3.024 1.018.912 2.73 2.256 4.28 3.805 1.55 1.55 2.895 2.835 3.805 4.28.912 1.018 1.8 1.448 3.024 1.448 1.23 0 2.94-1.34 2.94-1.34s.43-1.2.12-2.112c-.312-.912-1.512-.528-1.512-.528z" fill="currentColor"></path></svg>
     </a>
 
@@ -195,25 +192,25 @@
             fertilite: {
                 title: 'Fertilité Féminine',
                 products: [
-                    { id: 'berry-nectar', name: 'Berry Nectar', subtitle: 'BOOSTER DE VITALITÉ', description: 'Jus de fruits rouges et aloe vera, renforce la vitalité féminine.', price: '22.000 FCFA' },
-                    { id: 'vitolize-femme', name: 'Vitolize Femme', subtitle: 'ÉQUILIBRE HORMONAL', description: 'Complexe vitamines et minéraux pour la femme.', price: '27.500 FCFA' },
-                    { id: 'lycium-plus', name: 'Lycium Plus', subtitle: 'ANTIOXYDANT PUISSANT', description: "Antioxydants puissants pour l'équilibre hormonal.", price: '26.000 FCFA' }
+                    { id: 'berry-nectar', name: 'Berry Nectar', subtitle: 'BOOSTER DE VITALITÉ', description: 'Jus de fruits rouges et aloe vera, renforce la vitalité féminine.', price: '22.000 FCFA', youtube: 'https://youtu.be/APSPe27797o' },
+                    { id: 'vitolize-femme', name: 'Vitolize Femme', subtitle: 'ÉQUILIBRE HORMONAL', description: 'Complexe vitamines et minéraux pour la femme.', price: '27.500 FCFA', youtube: 'https://youtu.be/hLhie8HtIIQ' },
+                    { id: 'lycium-plus', name: 'Lycium Plus', subtitle: 'ANTIOXYDANT PUISSANT', description: "Antioxydants puissants pour l'équilibre hormonal.", price: '26.000 FCFA', youtube: 'https://youtu.be/9lqy6uSBVG0' }
                 ]
             },
             hta: {
                 title: 'Hypertension (HTA)',
                 products: [
-                    { id: 'arctic-sea', name: 'Arctic Sea', subtitle: 'OMEGA-3', description: 'Description pour Arctic Sea', price: '26.000 FCFA' },
-                    { id: 'garlic-thyme', name: 'Garlic-Thyme', subtitle: 'AIL & THYM', description: 'Description pour Garlic-Thyme', price: '16.000 FCFA' },
-                    { id: 'cardio-health', name: 'Cardio Health', subtitle: 'COQ10', description: 'Description pour Cardio Health', price: '29.000 FCFA' }
+                    { id: 'arctic-sea', name: 'Arctic Sea', subtitle: 'OMEGA-3', description: 'Description pour Arctic Sea', price: '26.000 FCFA', youtube: 'https://youtu.be/UCuVdQMJb8o' },
+                    { id: 'garlic-thyme', name: 'Garlic-Thyme', subtitle: 'AIL & THYM', description: 'Description pour Garlic-Thyme', price: '16.000 FCFA', youtube: 'https://youtu.be/cX0PQ5-GMoI' },
+                    { id: 'cardio-health', name: 'Cardio Health', subtitle: 'COQ10', description: 'Description pour Cardio Health', price: '29.000 FCFA', youtube: 'https://youtu.be/gLmziFMe5ig' }
                 ]
             },
             colopathie: {
                 title: 'Colopathie',
                 products: [
-                    { id: 'fields-of-greens', name: 'Fields of Greens', subtitle: 'FIBRES & LÉGUMES', description: 'Description pour Fields of Greens', price: '11.500 FCFA' },
-                    { id: 'active-pro-b', name: 'Active Pro-B', subtitle: 'PROBIOTIQUES', description: 'Description pour Active Pro-B', price: '32.000 FCFA' },
-                    { id: 'bee-propolis', name: 'Bee Propolis', subtitle: "PROPOLIS D'ABEILLE", description: 'Description pour Bee Propolis', price: '28.500 FCFA' }
+                    { id: 'fields-of-greens', name: 'Fields of Greens', subtitle: 'FIBRES & LÉGUMES', description: 'Description pour Fields of Greens', price: '11.500 FCFA', youtube: 'https://youtu.be/0KXqHGZArhc' },
+                    { id: 'active-pro-b', name: 'Active Pro-B', subtitle: 'PROBIOTIQUES', description: 'Description pour Active Pro-B', price: '32.000 FCFA', youtube: 'https://youtu.be/iT4v0aC8_Hg' },
+                    { id: 'bee-propolis', name: 'Bee Propolis', subtitle: "PROPOLIS D\'ABEILLE", description: 'Description pour Bee Propolis', price: '28.500 FCFA', youtube: 'https://youtu.be/GcEvHKTzMq0' }
                 ]
             }
         };
@@ -223,59 +220,91 @@
         const categoryCards = document.querySelectorAll('.category-card');
         const backButton = document.getElementById('back-to-categories');
 
-        function populateProductView(categoryData) {
-            try {
-                const titleEl = document.getElementById('product-view-title');
-                const gridEl = document.getElementById('product-view-grid');
-                const tabsEl = document.getElementById('video-tabs');
-                const playerContainer = document.getElementById('video-player-container');
-                const player = document.getElementById('posology-video-player');
+        function getYouTubeID(url) {
+            const regex = /(?:https?:\/\/)?(?:www\.)?(?:youtube\.com|youtu\.be)\/(?:watch\?v=)?(?:embed\/)?([a-zA-Z0-9_-]{11})/;
+            const match = url.match(regex);
+            return match ? match[1] : null;
+        }
 
-                titleEl.textContent = categoryData.title;
-                gridEl.innerHTML = '';
-                tabsEl.innerHTML = '';
+        function loadVideoForTab(tab) {
+            const playerContainer = document.getElementById('video-player-container');
+            playerContainer.innerHTML = '';
 
-                if (!categoryData.products || categoryData.products.length === 0) {
-                    gridEl.innerHTML = '<p>Aucun produit dans cette catégorie.</p>';
-                    playerContainer.style.display = 'none';
-                    return;
-                }
+            const youtubeLink = tab.dataset.youtubeLink;
+            const videoId = youtubeLink ? getYouTubeID(youtubeLink) : null;
 
-                categoryData.products.forEach((product, index) => {
-                    const productCard = document.createElement('div');
-                    productCard.className = 'product-view-card';
-                    productCard.innerHTML = `
-                        <img src="images/${product.id}.jpg" alt="${product.name}" class="product-view-card__image">
-                        <div class="product-view-card__content">
-                            <h4 class="product-view-card__name">${product.name}</h4>
-                            <p class="product-view-card__subtitle">${product.subtitle}</p>
-                            <p class="product-view-card__description">${product.description}</p>
-                            <p class="product-view-card__price">${product.price}</p>
-                            <a href="https://wa.me/22678877011?text=Bonjour+je+suis+intéressé+par+${encodeURIComponent(product.name)}" target="_blank" class="product-view-card__button">Commander sur WhatsApp</a>
-                        </div>
-                    `;
-                    gridEl.appendChild(productCard);
+            if (videoId) {
+                const iframeContainer = document.createElement('div');
+                iframeContainer.style.position = 'relative';
+                iframeContainer.style.paddingBottom = '56.25%';
+                iframeContainer.style.height = '0';
+                iframeContainer.style.borderRadius = '12px';
+                iframeContainer.style.overflow = 'hidden';
+                iframeContainer.style.backgroundColor = '#000';
 
-                    const videoTab = document.createElement('button');
-                    videoTab.className = 'video-tab';
-                    videoTab.textContent = product.name;
-                    videoTab.dataset.videoSrc = `videos/posologie-${product.id}.mp4`;
-                    tabsEl.appendChild(videoTab);
+                const iframe = document.createElement('iframe');
+                iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0`;
+                iframe.frameBorder = '0';
+                iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+                iframe.allowFullscreen = true;
+                iframe.style.position = 'absolute';
+                iframe.style.top = '0';
+                iframe.style.left = '0';
+                iframe.style.width = '100%';
+                iframe.style.height = '100%';
 
-                    if (index === 0) {
-                        videoTab.classList.add('active');
-                        const sourceEl = player.querySelector('source');
-                        if (sourceEl) {
-                            sourceEl.src = videoTab.dataset.videoSrc;
-                            player.load();
-                        }
-                    }
-                });
-                playerContainer.style.display = 'block';
-            } catch (e) {
-                console.error('Erreur lors de la population de la vue produit:', e);
-                gridEl.innerHTML = '<p>Une erreur est survenue lors du chargement des produits.</p>';
+                iframeContainer.appendChild(iframe);
+                playerContainer.appendChild(iframeContainer);
             }
+            document.querySelectorAll('.video-tab').forEach(t => t.classList.remove('active'));
+            tab.classList.add('active');
+        }
+
+        function populateProductView(categoryData, categoryId) {
+            const titleEl = document.getElementById('product-view-title');
+            const gridEl = document.getElementById('product-view-grid');
+            const tabsEl = document.getElementById('video-tabs');
+            const posologySection = document.querySelector('.posology-section');
+
+            titleEl.textContent = categoryData.title;
+            gridEl.innerHTML = '';
+            tabsEl.innerHTML = '';
+            document.getElementById('video-player-container').innerHTML = '';
+
+            if (!categoryData.products || categoryData.products.length === 0) {
+                gridEl.innerHTML = '<p>Aucun produit dans cette catégorie.</p>';
+                posologySection.style.display = 'none';
+                return;
+            }
+            posologySection.style.display = 'block';
+
+            categoryData.products.forEach((product, index) => {
+                const productCard = document.createElement('div');
+                productCard.className = 'product-view-card';
+                productCard.innerHTML = `
+                    <img src="images/${product.id}.jpg" alt="${product.name}" class="product-view-card__image">
+                    <div class="product-view-card__content">
+                        <h4 class="product-view-card__name">${product.name}</h4>
+                        <p class="product-view-card__subtitle">${product.subtitle}</p>
+                        <p class="product-view-card__description">${product.description}</p>
+                        <p class="product-view-card__price">${product.price}</p>
+                        <a href="https://wa.me/22678877011?text=Bonjour+je+suis+intéressé+par+${encodeURIComponent(product.name)}" target="_blank" class="product-view-card__button">Commander sur WhatsApp</a>
+                    </div>
+                `;
+                gridEl.appendChild(productCard);
+
+                const videoTab = document.createElement('button');
+                videoTab.className = 'video-tab';
+                videoTab.textContent = product.name;
+                if (product.youtube) {
+                   videoTab.dataset.youtubeLink = product.youtube;
+                }
+                tabsEl.appendChild(videoTab);
+
+                if (index === 0) {
+                    loadVideoForTab(videoTab);
+                }
+            });
         }
 
         categoryCards.forEach(card => {
@@ -287,11 +316,9 @@
                 const categoryId = card.dataset.category;
                 const categoryData = productsData[categoryId];
                 if (categoryData) {
-                    populateProductView(categoryData);
+                    populateProductView(categoryData, categoryId);
                 } else {
                     console.error('Aucune donnée trouvée pour la catégorie:', categoryId);
-                    document.getElementById('product-view-title').textContent = 'Catégorie non trouvée';
-                    document.getElementById('product-view-grid').innerHTML = '';
                 }
             });
         });
@@ -304,21 +331,7 @@
 
         document.getElementById('video-tabs').addEventListener('click', e => {
             if (e.target.classList.contains('video-tab')) {
-                const player = document.getElementById('posology-video-player');
-                if (!player) return;
-                
-                const source = player.querySelector('source');
-                if (!source) return;
-
-                const newSrc = e.target.dataset.videoSrc;
-                document.querySelectorAll('.video-tab').forEach(tab => tab.classList.remove('active'));
-                e.target.classList.add('active');
-
-                if (source.getAttribute('src') !== newSrc) {
-                    source.src = newSrc;
-                    player.load();
-                    player.play().catch(err => console.error('Erreur de lecture vidéo:', err));
-                } 
+                loadVideoForTab(e.target);
             }
         });
 
@@ -333,14 +346,14 @@
             window.open(waUrl, '_blank');
         });
 
-        // --- TESTIMONIALS SCRIPT ---
         const testimonialGrid = document.getElementById('testimonial-grid');
+        let currentlyPlayingVideo = null;
+
         temoignages.forEach(temoignage => {
             const card = document.createElement('div');
             card.className = 'testimonial-card';
-
             card.innerHTML = `
-                <video class="testimonial-video" loop muted playsinline poster="${temoignage.poster}">
+                <video class="testimonial-video" loop playsinline poster="${temoignage.poster}">
                     <source src="${temoignage.video}" type="video/mp4">
                 </video>
                 <div class="card-overlay"></div>
@@ -355,33 +368,32 @@
                     </div>
                 </div>
             `;
-
             const video = card.querySelector('.testimonial-video');
             const playButton = card.querySelector('.play-button');
 
-            playButton.addEventListener('click', (e) => {
-                e.stopPropagation();
-                if (video.paused) {
-                    video.play();
-                    playButton.style.display = 'none';
-                } 
+            const stopOtherVideos = () => {
+                if (currentlyPlayingVideo && currentlyPlayingVideo !== video) {
+                    currentlyPlayingVideo.pause();
+                }
+            };
+
+            video.addEventListener('pause', () => { playButton.style.display = 'flex'; });
+            video.addEventListener('play', () => {
+                playButton.style.display = 'none';
+                stopOtherVideos();
+                currentlyPlayingVideo = video;
             });
 
-            video.addEventListener('click', () => {
-                if (!video.paused) {
+            card.addEventListener('click', () => {
+                if (video.paused) {
+                    video.muted = false;
+                    video.play();
+                } else {
                     video.pause();
-                    playButton.style.display = 'flex';
                 }
             });
-
-             video.addEventListener('pause', () => {
-                playButton.style.display = 'flex';
-            });
-
-
             testimonialGrid.appendChild(card);
         });
-
     });
     </script>
 </body>
