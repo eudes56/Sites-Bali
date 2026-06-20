@@ -357,12 +357,23 @@ src="https://www.facebook.com/tr?id=2070972286860330&ev=PageView&noscript=1"
 
         categoryCards.forEach(card => {
             card.addEventListener('click', () => {
+
+                // --- META PIXEL EVENT ---
+                const categoryId = card.dataset.category;
+                const categoryData = productsData[categoryId];
+                if (categoryData) {
+                    fbq('track', 'ViewContent', {
+                        content_name: categoryData.title,
+                        content_category: 'BALI BIO MARKET',
+                        content_ids: [categoryId],
+                    });
+                }
+                // --- END META PIXEL EVENT ---
+
                 mainContent.style.display = 'none';
                 productView.style.display = 'block';
                 window.scrollTo(0, 0);
 
-                const categoryId = card.dataset.category;
-                const categoryData = productsData[categoryId];
                 if (categoryData) {
                     populateProductView(categoryData, categoryId);
                 } else {
