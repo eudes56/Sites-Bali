@@ -329,6 +329,7 @@ src="https://www.facebook.com/tr?id=2070972286860330&ev=PageView&noscript=1"
             categoryData.products.forEach((product, index) => {
                 const productCard = document.createElement('div');
                 productCard.className = 'product-view-card';
+                productCard.id = product.id;
                 productCard.innerHTML = `
                     <img src="images/${product.id}.jpg" alt="${product.name}" class="product-view-card__image">
                     <div class="product-view-card__content">
@@ -387,6 +388,42 @@ src="https://www.facebook.com/tr?id=2070972286860330&ev=PageView&noscript=1"
             productView.style.display = 'none';
             window.scrollTo(0, 0);
         });
+
+        function openCategoryFromURL() {
+            const params = new URLSearchParams(window.location.search);
+            const catId = params.get('cat');
+            const prodId = params.get('prod');
+
+            if (catId && productsData[catId]) {
+                const categoryData = productsData[catId];
+
+                fbq('track', 'ViewContent', {
+                    content_name: categoryData.title,
+                    content_category: 'BALI BIO MARKET',
+                    content_ids: [catId],
+                });
+
+                mainContent.style.display = 'none';
+                productView.style.display = 'block';
+                populateProductView(categoryData, catId);
+
+                if (prodId) {
+                    setTimeout(() => {
+                        const el = document.getElementById(prodId);
+                        if (el) {
+                            el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                            el.style.outline = '3px solid #2e7d32';
+                            el.style.borderRadius = '12px';
+                        } else {
+                            window.scrollTo(0, 0);
+                        }
+                    }, 150);
+                } else {
+                    window.scrollTo(0, 0);
+                }
+            }
+        }
+        openCategoryFromURL();
 
         document.getElementById('video-tabs').addEventListener('click', e => {
             if (e.target.classList.contains('video-tab')) {
